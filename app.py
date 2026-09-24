@@ -39,9 +39,7 @@ if st.button("submit"):
     )
     ttl = 'Within One Day'
   else:
-    priority='NONE'   
-    created_date = 'NONE' 
-    ttl = 'NONE'
+    print('No Incidents Found')
 
 st.write(print(f"""
 Below is the Incident Details \n
