@@ -1,6 +1,8 @@
 import streamlit as st
 from datetime import datetime, timedelta
 priority = ""
+created_date = ""
+ttl = ""
 st.title('Customer Support Incident')
 incidents = ['INC000112','INC000123','INC000122','INC000111']
 
