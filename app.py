@@ -47,7 +47,7 @@ if st.button("submit"):
   st.write(f"""
 Incident Summary
 -----------------------
-Priority \t: {priority}
-Created Date \t: {created_date}
-Time to resolve \t: {ttl}""")
+Priority \t: {priority} \n
+Created Date \t: {created_date} \n
+Time to resolve \t: {ttl}""") \n
 st.balloons()
