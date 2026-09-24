@@ -10,6 +10,7 @@ st.info('Get Incident Details')
 incidentId = st.text_input('Enter Incident Id')
 
 if st.button("submit"):
+  st.write("Below is the Incident Details")
   if incidentId == 'INC000112':
     st.write('Low Priority')
     priority = 'P3'
@@ -18,7 +19,7 @@ if st.button("submit"):
     ttl = 'Within Two Days'
   elif incidentId == 'INC000123':
     st.write('Medium Priority')
-    priority = 'P2'   
+    priority = 'P2'
     issueRaisedOn = datetime.now()
     created_date = issueRaisedOn - timedelta(days=1)
     ttl = 'Within One Day'
@@ -36,16 +37,17 @@ if st.button("submit"):
     days=2,
     hours=3,
     minutes=30
-    )
+)
     ttl = 'Within One Day'
   else:
-    print('No Incidents Found')
+        priority = 'NONE'
+        created_date = 'NONE'
+        ttl = 'NONE'
 
-st.write(print(f"""
-Below is the Incident Details \n
+  st.write(f"""
+Incident Summary
 -----------------------
-Priority \t: {priority} \n
-Created Date \t: {created_date} \n
-Time to resolve \t: {ttl} \n
-"""))
+Priority \t: {priority}
+Created Date \t: {created_date}
+Time to resolve \t: {ttl}""")
 st.balloons()
