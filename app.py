@@ -49,5 +49,5 @@ Incident Summary
 -----------------------
 Priority \t: {priority} \n
 Created Date \t: {created_date} \n
-Time to resolve \t: {ttl}""") \n
+Time to resolve \t: {ttl}""")
 st.balloons()
