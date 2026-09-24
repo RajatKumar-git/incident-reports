@@ -37,9 +37,10 @@ if st.button("submit"):
     minutes=30
 )
     ttl = 'Within One Day'
-  else: priority='NONE'   
-        created_date = 'NONE' 
-        ttl = 'NONE'
+  else:
+    priority='NONE'   
+    created_date = 'NONE' 
+    ttl = 'NONE'
 
     st.write(print(f"""
     Incident Summary
