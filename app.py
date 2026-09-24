@@ -37,7 +37,7 @@ if st.button("submit"):
     minutes=30
 )
     ttl = 'Within One Day'
-  else priority='NONE'   
+  else: priority='NONE'   
         created_date = 'NONE' 
         ttl = 'NONE'
 
