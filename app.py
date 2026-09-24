@@ -42,10 +42,8 @@ if st.button("submit"):
         priority = 'NONE'
         created_date = 'NONE'
         ttl = 'NONE'
-  st.write("Below is the Incident Details")
+  st.write("Below is the Incident Summary")
   st.write(f"""
-Incident Summary
------------------------
 Priority \t: {priority} \n
 Created Date \t: {created_date} \n
 Time to resolve \t: {ttl}""")
