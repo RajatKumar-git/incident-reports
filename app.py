@@ -10,7 +10,6 @@ st.info('Get Incident Details')
 incidentId = st.text_input('Enter Incident Id')
 
 if st.button("submit"):
-  st.write("Below is the Incident Details")
   if incidentId == 'INC000112':
     st.write('Low Priority')
     priority = 'P3'
@@ -43,7 +42,7 @@ if st.button("submit"):
         priority = 'NONE'
         created_date = 'NONE'
         ttl = 'NONE'
-
+  st.write("Below is the Incident Details")
   st.write(f"""
 Incident Summary
 -----------------------
